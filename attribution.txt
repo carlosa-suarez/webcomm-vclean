@@ -1,0 +1,13 @@
+Citation
+
+Logo, banner images and branding was reused from the assignment #2 in Intermediate Visual Communication Class, SAIT Fall 2024.
+All the assets were created by the author of the page.
+
+banner brand, Carlos Suarez, Visual Communication Class, SAIT 2024
+spray 2, Carlos Suarez, Visual Communication Class, SAIT 2024
+vacuum logo, Carlos Suarez, Visual Communication Class, SAIT 2024
+vclean-logo, Carlos Suarez, Visual Communication Class, SAIT 2024
+
+Social media icons
+The icons were extracted from https://www.flaticon.com/, each icon has its own citation in the html code
+

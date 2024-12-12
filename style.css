@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    --blue: #2a7b9d;
+    --light-blue: #8dc5dd;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main {
+    flex-basis: 690px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+header > nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header > nav ul li a:active, header > nav ul li a.active{
+    text-decoration: underline;
+}
+
+#logo {
+    width: 15%;
+}
+
+#hero h2 {
+    font-size: 2em;
+}
+
+#hero h2, #hero p, #hero button {
+    margin: auto 10px;
+}
+
+#hero picture img {
+    width: 100%;
+}
+
+#hero button {
+    background: var(--blue);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 10px;
+}
+
+#hero button:active, #hero button:visited {
+    background-color: var(--light-blue);
+    color: gray;
+}
+
+footer {
+    color: white;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 2%;
+}
+
+#social-menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#social-menu i, 
+#social-menu i span,
+#social-menu i a
+{
+    font-size: 0;
+}
+#social-menu i {
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 17%;
+}
+#social-menu i img {
+    width: 16px;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 576px) {
+    #logo {
+        width: 10%;
+    }
+
+    header > nav {
+        width: 45%;
+        max-width: 410px;
+    }
+
+    header > nav > h1 {
+        text-align: right;
+    }
+    
+    header > nav ul {
+        font-size: 1.5em;
+    }
+
+    #hero {
+        position: relative;
+    }
+
+    #hero h2 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 3em;
+        color: white;
+    }
+
+    #hero p {
+        position: absolute;
+        top: 4em;
+        color: white;
+        left: 10px;
+        font-size: 2em;
+    }
+
+    #hero button {
+        position: absolute;
+        display: inline-block;
+        bottom: 55px;
+        left: 40%;
+        margin: 0;
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        align-items: end;
+    }
+
+    header h1 {
+        font-size: 5em;
+    }
+
+    #logo {
+        width: 7%;
+        max-width: 120px;
+    }
+
+    main {
+        background-color: var(--light-blue);
+        flex-basis: 830px;
+    }
+
+    #hero {
+        background-color: white;
+        margin: 1% 10%;
+        padding: 1%;
+        display: inline-block;
+        width: 80%;
+    }
+
+    #hero picture {
+        float: left;
+        width: 45%;
+    }
+
+    #hero h2, #hero p {
+        color: black;
+        position: relative;
+    }
+
+    #hero button {
+        display: inline;
+        clear: left;
+        float: right;
+        position: initial;
+    }
+
+    #about #hero picture {
+        float: right;
+    }
+
+    #about #hero button {
+        clear: right;
+        float: left;
+    }
+
+    #services #hero {
+        height: 1056px;
+    }
+
+    #services #hero #services-list {
+        position: relative;
+        display: inline-block;
+        width: 40%;
+        font-size: 2em;
+        list-style: none;
+        margin-top: 172px;
+        height: 100px;
+        margin-left: 60px;
+    }
+}
